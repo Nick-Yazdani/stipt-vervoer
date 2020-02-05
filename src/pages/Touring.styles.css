@@ -1,0 +1,30 @@
+.vip-touring {
+    background: url('../images/Lloret-de-Mar-2.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.content {
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.second-touring {
+    background: url('../images/Italie_Venetie.jpg') no-repeat center center/cover;
+}
+
+
+.s-1-touring h5 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.s-1-touring ul {
+    list-style-type: none;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.s-1-touring ul li {
+    padding: 1rem;
+}

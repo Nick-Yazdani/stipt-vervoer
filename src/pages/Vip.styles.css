@@ -1,0 +1,69 @@
+.parent-vip {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.vip {
+    height: 100vh;
+    background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.h-block {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.second {
+    background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
+}
+
+
+.p-block {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+p {
+    margin: 2rem 0;
+}
+
+.secondary-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+}
+
+.s-1 {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    width: 100%;
+}
+
+.s-1 li a {
+    text-decoration: none;
+    color: white;
+}
+
+.s-1 li a:hover {
+    text-decoration: underline;
+}
+
+.s-1 h5 {
+    font-size: 1.5rem;
+    padding: 1rem 0 0 1rem;
+}
+
+.s-1 ul {
+    list-style-type: none;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.s-1 ul li {
+    padding: 1rem;
+}

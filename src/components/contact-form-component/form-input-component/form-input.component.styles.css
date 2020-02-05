@@ -1,0 +1,23 @@
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1rem;
+    padding: 0.6rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}

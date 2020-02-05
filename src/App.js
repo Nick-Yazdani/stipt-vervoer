@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
 
-function App() {
+import Navbar from './components/navbar-component/navbar.component';
+import Footer from './components/footer-component/footer.component';
+
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Vip from './pages/Vip';
+import Touring from './pages/Touring';
+
+import './styles.css';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Route exact path="/" component={Home} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/vip-diensten" component={Vip} />
+      <Route path="/touringcar-verhuur" component={Touring} />
+      <Footer />
     </div>
   );
 }

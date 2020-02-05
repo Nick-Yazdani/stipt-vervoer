@@ -1,0 +1,14 @@
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: inline-block;
+    font-family: 'Quicksand';
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(0,0,0,0.5);
+    color: #4DDB20;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.home {
+    background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.big-text {
+    font-size: 4rem;
+}
+
+.smaller-text {
+    font-size: 2rem;
+}
