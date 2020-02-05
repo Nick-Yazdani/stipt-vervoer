@@ -28,3 +28,34 @@
 .s-1-touring ul li {
     padding: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .h-block {
+        text-align: center;
+    }
+    .h-block h3 {
+        font-size: 1.5rem;
+    }
+    .p-block p {
+        font-size: 1rem;
+    }
+    .secondary-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .s-1-touring h5 {
+        font-size: 1.5rem;
+    }
+    .s-1-touring ul li {
+        font-size: 1rem;
+    }
+
+    .s-1-touring ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .s-1-touring ul li a:hover {
+        text-decoration: underline;
+    }
+}

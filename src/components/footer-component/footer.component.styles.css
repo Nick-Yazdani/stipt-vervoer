@@ -70,3 +70,24 @@ footer {
 .footer-of-footer {
     padding: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+  footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  
+  .footer-links {
+      padding-bottom: 1rem;
+  }
+
+  .fb {
+      margin-bottom: 1rem;
+  }
+
+  .footer-of-footer {
+      text-align: center;
+  }
+}
