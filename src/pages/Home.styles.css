@@ -18,7 +18,7 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.big-text {
+.big-text h1 {
     font-size: 4rem;
 }
 
@@ -30,7 +30,7 @@
     .home {
         text-align: center;
     }
-    .big-text {
+    .big-text h1 {
        font-size: 2rem;
     }
     .smaller-text {

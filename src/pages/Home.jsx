@@ -7,7 +7,7 @@ const Home = () => {
         <div className="home">
             <div className="overlay">
                 <div className="big-text">
-                    Stipt Vervoer
+                    <h1>Stipt Vervoer</h1>
                 </div>
                 <div className="smaller-text">
                     Beste Prijzen, Leukste Reizen

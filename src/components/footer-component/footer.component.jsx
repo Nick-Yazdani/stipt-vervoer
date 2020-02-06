@@ -19,7 +19,9 @@ const Footer = () => {
                 </ul>
             </div>
             <hr></hr>
+            <div className="fb-logo">
             <FacebookLogo className="fb" onClick={() => window.open("https://www.facebook.com", '_blank')}/>
+            </div>
             <div className="contact">
          
                 <div className="contact-container">

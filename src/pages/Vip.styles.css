@@ -67,3 +67,14 @@ p {
 .s-1 ul li {
     padding: 1rem;
 }
+
+
+@media only screen and (max-width: 600px) {
+    h3 {
+        font-size: 1rem;
+    }
+
+    .s-1 ul {
+        font-size: 1rem;
+    }
+}

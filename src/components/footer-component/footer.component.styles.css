@@ -50,6 +50,13 @@ footer {
     margin-top: auto;
     margin-bottom: auto;
     cursor: pointer;
+    border-radius: 1rem;
+}
+
+.fb-logo {
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: black;
 }
 
 #email {
@@ -85,6 +92,7 @@ footer {
 
   .fb {
       margin-bottom: 1rem;
+      border-radius: 1rem;
   }
 
   .footer-of-footer {
