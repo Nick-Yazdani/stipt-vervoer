@@ -8,7 +8,7 @@ const Vip = () => {
             <div className="vip-touring">
                 <div className="overlay">
                     <div className="big-text">
-                        Touringcar verhuur
+                        <h1>Touringcar verhuur</h1>
                 </div>
                     <div className="smaller-text">
                         Vertrouwd en comfortabel

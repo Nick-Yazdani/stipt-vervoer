@@ -8,7 +8,7 @@ const Vip = () => {
             <div className="vip">
                 <div className="overlay">
                     <div className="big-text">
-                        VIP vervoer
+                        <h1>VIP vervoer</h1>
                 </div>
                     <div className="smaller-text">
                         Professioneel en betrouwbaar
