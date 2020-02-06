@@ -98,4 +98,7 @@ footer {
   .footer-of-footer {
       text-align: center;
   }
+  .contact-text {
+      font-size: 0.9rem;
+  }
 }

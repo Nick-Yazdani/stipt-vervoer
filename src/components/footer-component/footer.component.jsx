@@ -28,9 +28,9 @@ const Footer = () => {
                     <div>
                         <span>STIPT VERVOER</span>
                     </div>
-                    <span>Touringcar verhuur: +31 (0)70 889 32 33</span>
-                    <span>Busreizen: +31 (0)70 889 32 33</span>
-                    <span>Email: <a id="email" href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a></span>
+                    <span className="contact-text">Touringcar verhuur: +31 (0)70 889 32 33</span>
+                    <span className="contact-text">Busreizen: +31 (0)70 889 32 33</span>
+                    <span className="contact-text">Email: <a id="email" href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a></span>
                 </div>
             </div>
         </footer>
