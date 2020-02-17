@@ -9,6 +9,7 @@ class ContactForm extends Component {
         bedrijf: '',
         email: '',
         vervoer: '',
+        wensen: '',
         errorStyle: { borderBottom: '1px solid red' },
         nameError: false,
         emailError: false
@@ -20,8 +21,9 @@ class ContactForm extends Component {
         const email = this.state.email;
         const bedrijf = this.state.bedrijf;
         const vervoer = this.state.vervoer;
+        const wensen = this.state.wensen;
         // Default options are marked with *
-        const response = await fetch('http://localhost:3001/stipt-form', {
+        const response = await fetch('http://stiptvervoer.com/contact', {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
@@ -74,8 +76,8 @@ class ContactForm extends Component {
                         <FormInput name="email" type="email" text="uw email (verplicht)" handleChange={this.handleChange} value={this.state.email} style={this.state.emailError ? this.state.errorStyle : null} />
                         <FormInput name="vervoer" type="text" text="welk vervoer wenst u?" handleChange={this.handleChange} value={this.state.vervoer} />
                         <div className="text-control">
-                            <label htmlFor="aanvrag">OMSCHRIJF UW WENSEN EN IDEEËN (B.V. CATERING AAN BOORD)</label>
-                            <textarea name="aanvraag" type="text"></textarea>
+                            <label htmlFor="wensen">OMSCHRIJF UW WENSEN EN IDEEËN (B.V. CATERING AAN BOORD)</label>
+                            <textarea name="wensen" type="text" handleChange={this.handleChange} value={this.state.wensen}></textarea>
                         </div>
                         <div className="button-control">
                             <button>verzenden</button>
