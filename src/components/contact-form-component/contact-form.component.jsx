@@ -61,7 +61,7 @@ class ContactForm extends Component {
 
         if (this.state.name !== '' && this.state.email !== '') {
             this.postData().then(() => {
-                this.setState({ naam: '', bedrijf: '', email: '', vervoer: '' })
+                this.setState({ naam: '', bedrijf: '', email: '', vervoer: '', wensen: '' })
             })
         }
     }
