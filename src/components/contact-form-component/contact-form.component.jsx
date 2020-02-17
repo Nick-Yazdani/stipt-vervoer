@@ -61,7 +61,7 @@ class ContactForm extends Component {
 
         if (this.state.name !== '' && this.state.email !== '') {
             this.postData().then(() => {
-                this.setState({ name: '', bedrijf: '', email: '', vervoer: '' })
+                this.setState({ naam: '', bedrijf: '', email: '', vervoer: '' })
             })
         }
     }
@@ -71,7 +71,7 @@ class ContactForm extends Component {
             <div className="form-container">
                 <div className="overlay" style={{ height: "120vh" }}>
                     <form onSubmit={this.handleSubmit}>
-                        <FormInput name="name" type="text" text="uw naam (verplicht)" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />
+                        <FormInput name="naam" type="text" text="uw naam (verplicht)" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />
                         <FormInput name="bedrijf" type="text" text="uw bedrijf (optioneel)" handleChange={this.handleChange} value={this.state.bedrijf} />
                         <FormInput name="email" type="email" text="uw email (verplicht)" handleChange={this.handleChange} value={this.state.email} style={this.state.emailError ? this.state.errorStyle : null} />
                         <FormInput name="vervoer" type="text" text="welk vervoer wenst u?" handleChange={this.handleChange} value={this.state.vervoer} />
