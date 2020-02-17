@@ -5,7 +5,7 @@ import './contact-form.component.styles.css';
 
 class ContactForm extends Component {
     state = {
-        name: '',
+        naam: '',
         bedrijf: '',
         email: '',
         vervoer: '',
@@ -17,7 +17,7 @@ class ContactForm extends Component {
 
 
     postData = async () => {
-        const name = this.state.name;
+        const naam = this.state.naam;
         const email = this.state.email;
         const bedrijf = this.state.bedrijf;
         const vervoer = this.state.vervoer;
@@ -71,7 +71,7 @@ class ContactForm extends Component {
             <div className="form-container">
                 <div className="overlay" style={{ height: "120vh" }}>
                     <form onSubmit={this.handleSubmit}>
-                        <FormInput name="name" type="text" text="uw naam (verplicht)" handleChange={this.handleChange} value={this.state.name} style={this.state.nameError ? this.state.errorStyle : null} />
+                        <FormInput name="name" type="text" text="uw naam (verplicht)" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />
                         <FormInput name="bedrijf" type="text" text="uw bedrijf (optioneel)" handleChange={this.handleChange} value={this.state.bedrijf} />
                         <FormInput name="email" type="email" text="uw email (verplicht)" handleChange={this.handleChange} value={this.state.email} style={this.state.emailError ? this.state.errorStyle : null} />
                         <FormInput name="vervoer" type="text" text="welk vervoer wenst u?" handleChange={this.handleChange} value={this.state.vervoer} />
