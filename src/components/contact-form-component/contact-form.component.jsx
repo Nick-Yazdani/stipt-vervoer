@@ -77,7 +77,7 @@ class ContactForm extends Component {
                         <FormInput name="vervoer" type="text" text="welk vervoer wenst u?" handleChange={this.handleChange} value={this.state.vervoer} />
                         <div className="text-control">
                             <label htmlFor="wensen">OMSCHRIJF UW WENSEN EN IDEEËN (B.V. CATERING AAN BOORD)</label>
-                            <textarea name="wensen" type="text" handleChange={this.handleChange} value={this.state.wensen}></textarea>
+                            <textarea name="wensen" type="text" onChange={this.handleChange} value={this.state.wensen}></textarea>
                         </div>
                         <div className="button-control">
                             <button>verzenden</button>
