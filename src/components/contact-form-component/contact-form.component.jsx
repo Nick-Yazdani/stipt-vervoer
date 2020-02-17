@@ -34,7 +34,7 @@ class ContactForm extends Component {
             },
             redirect: 'follow', // manual, *follow, error
             referrerPolicy: 'no-referrer', // no-referrer, *client
-            body: JSON.stringify({ name, email, bedrijf, vervoer }) // body data type must match "Content-Type" header
+            body: JSON.stringify({ naam, email, bedrijf, vervoer, wensen }) // body data type must match "Content-Type" header
         });
         console.log(response);
         return await response.json();
