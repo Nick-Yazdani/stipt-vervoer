@@ -8,7 +8,7 @@ class FeedbackContainer extends React.Component {
         feedback: ''
     }
     componentDidMount = async () => {
-        const response = await fetch("http://localhost:3001/feedback")
+        const response = await fetch("https://stiptvervoer.com/feedback")
         const parsedResponse = await response.json();
         console.log(parsedResponse)
         this.setState({feedback: parsedResponse})
