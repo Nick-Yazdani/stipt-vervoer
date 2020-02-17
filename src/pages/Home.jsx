@@ -1,18 +1,15 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
+import Overlay from '../components/overlay-component/overlay.component';
 
 import './Home.styles.css';
 
-const Home = () => {
+const Home = ({ title }) => {
     return (
         <div className="home">
-            <div className="overlay">
-                <div className="big-text">
-                    <h1>Stipt Vervoer</h1>
-                </div>
-                <div className="smaller-text">
-                    Beste Prijzen, Leukste Reizen
-                </div>
-            </div>
+            <Helmet><title>{title}</title></Helmet>
+            <Overlay title="Stipt Vervoer" caption="Beste Prijzen, Leukste Reizen"/>
         </div>
     );
 }

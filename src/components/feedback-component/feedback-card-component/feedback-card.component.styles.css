@@ -1,0 +1,8 @@
+.fb-cont {
+    width: 100%;
+    padding: 1rem;
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}

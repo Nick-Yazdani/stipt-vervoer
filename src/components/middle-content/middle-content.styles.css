@@ -1,0 +1,31 @@
+.h-block {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+}
+
+.p-block {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.h-block h3 {
+    font-size: 2rem;
+}
+
+.p-block p {
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .h-block {
+        text-align: center;
+    }
+    .h-block h3 {
+        font-size: 1.5rem;
+    }
+    .p-block p {
+        font-size: 1rem;
+    }
+}

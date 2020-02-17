@@ -1,34 +1,11 @@
-.parent-vip {
-    font-family: 'Quicksand', sans-serif;
-}
-
 .vip {
+    font-family: 'Quicksand', sans-serif;
     height: 100vh;
     background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
 }
 
-h3 {
-    font-size: 2rem;
-}
-
-.h-block {
-    padding: 2rem;
-    background-color: black;
-    color: white;
-}
-
 .second {
     background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
-}
-
-
-.p-block {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-}
-
-p {
-    margin: 2rem 0;
 }
 
 .secondary-content {

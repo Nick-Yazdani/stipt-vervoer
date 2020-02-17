@@ -1,29 +1,27 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import './Vip.styles.css';
 
-const Vip = () => {
+import MiddleContent from '../components/middle-content/middle-content.component';
+import Overlay from '../components/overlay-component/overlay.component';
+
+const Vip = ({ title }) => {
     return (
-        <div className="parent-vip">
+        <div>
+            <Helmet><title>{title}</title></Helmet>
             <div className="vip">
-                <div className="overlay">
-                    <div className="big-text">
-                        <h1>VIP vervoer</h1>
-                </div>
-                    <div className="smaller-text">
-                        Professioneel en betrouwbaar
-                </div>
-                </div>
+            <Overlay title={"VIP vervoer"} caption={"Professioneel en betrouwbaar"} />
             </div>
-            <div className="h-block">
-                <h3>VIP diensten in Den Haag</h3>
-                <div className="p-block">
-                    <p>Stipt Vip Vervoer heeft meer dan 30 jaar ervaring in professioneel vervoer. Wij leveren maatwerk; naar uw wensen organiseren wij VIP en delegatie vervoer in Amsterdam, Den Haag, Rotterdam en omgeving.</p>
-                    <p>Correct, representatief, geheimhouding verplicht, door justitie gescreened, minstens 5 jaar directiechauffeur ervaring en uiteraard CBR CCVD1 of CCVD2 gediplomeerd. Daar staan wij garant voor wanneer u een gediplomeerd chauffeur bij ons huurt.</p>
-                    <p>U kunt ook uiteraard studentenchauffeurs inhuren. Onze studentenchauffeurs zijn representatief en volgen of een HBO of een WO opleiding en hebben passie voor autos. Bovendien zijn zij opgeleid en getest door onze gediplomeerde CCVD2 chauffeurs.</p>
-                    <p>U kunt vrijblijvend een offerte ontvangen door dit aanvraagformulier in te vullen en op te sturen. Uiteraard kunt u ons ook per e-mail of telefonisch bereiken.</p>
-                </div>
-            </div>
+            <MiddleContent 
+            headline="VIP diensten in Den Haag" 
+            content={[
+                "Stipt Vip Vervoer heeft meer dan 30 jaar ervaring in professioneel vervoer. Wij leveren maatwerk; naar uw wensen organiseren wij VIP en delegatie vervoer in Amsterdam, Den Haag, Rotterdam en omgeving.",
+                "Correct, representatief, geheimhouding verplicht, door justitie gescreened, minstens 5 jaar directiechauffeur ervaring en uiteraard CBR CCVD1 of CCVD2 gediplomeerd. Daar staan wij garant voor wanneer u een gediplomeerd chauffeur bij ons huurt.",
+                "U kunt ook uiteraard studentenchauffeurs inhuren. Onze studentenchauffeurs zijn representatief en volgen of een HBO of een WO opleiding en hebben passie voor autos. Bovendien zijn zij opgeleid en getest door onze gediplomeerde CCVD2 chauffeurs.",
+                "U kunt vrijblijvend een offerte ontvangen door dit aanvraagformulier in te vullen en op te sturen. Uiteraard kunt u ons ook per e-mail of telefonisch bereiken."
+            ]}
+            />
             <div className="second">
                 <div className="overlay">
                     <div className="secondary-content">

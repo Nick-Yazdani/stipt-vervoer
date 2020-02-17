@@ -5,27 +5,6 @@
     height: 100vh;
 }
 
-.overlay {
-    z-index: 1;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.big-text h1 {
-    font-size: 4rem;
-}
-
-.smaller-text {
-    font-size: 2rem;
-}
-
 @media only screen and (max-width: 600px) {
     .home {
         text-align: center;

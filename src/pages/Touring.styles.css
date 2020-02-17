@@ -1,4 +1,4 @@
-.vip-touring {
+.touring {
     background: url('../images/Lloret-de-Mar-2.jpg') no-repeat center center/cover;
     height: 100vh;
 }
@@ -30,15 +30,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .h-block {
-        text-align: center;
-    }
-    .h-block h3 {
-        font-size: 1.5rem;
-    }
-    .p-block p {
-        font-size: 1rem;
-    }
     .secondary-content {
         display: flex;
         flex-direction: column;

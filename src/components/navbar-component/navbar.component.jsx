@@ -12,6 +12,7 @@ const Navbar = () => {
                 <NavbarItem text="touringcar verhuur" path="/touringcar-verhuur" />
                 <NavbarItem text="vip diensten" path="/vip-diensten" />
                 <NavbarItem text="contact" path="/contact" />
+                <NavbarItem text="feedback" path="/feedback" />
             </ul>
         </nav>
     );

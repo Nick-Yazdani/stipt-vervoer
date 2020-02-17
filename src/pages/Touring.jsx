@@ -1,27 +1,25 @@
 import React from 'react';
+import Helmet from 'react-helmet';
+
+import MiddleContent from '../components/middle-content/middle-content.component';
+import Overlay from '../components/overlay-component/overlay.component';
 
 import './Touring.styles.css';
 
-const Vip = () => {
+const Touring = ({ title }) => {
     return (
-        <div className="parent-vip">
-            <div className="vip-touring">
-                <div className="overlay">
-                    <div className="big-text">
-                        <h1>Touringcar verhuur</h1>
-                </div>
-                    <div className="smaller-text">
-                        Vertrouwd en comfortabel
-                </div>
-                </div>
+        <div>
+            <div className="touring">
+                <Helmet><title>{title}</title></Helmet>
+                <Overlay title={"Touringcar verhuur"} caption={"Vertrouwd en comfortabel"} />
             </div>
-            <div className="h-block">
-                <h3>Touringcar verhuur in Den Haag</h3>
-                <div className="p-block">
-                    <p>Stipt Vip Vervoer heeft meer dan 30 jaar ervaring in personenvervoer. Wij leveren maatwerk; naar uw wensen organiseren wij busreizen vanuit Amsterdam, Den Haag, Rotterdam en omgeving.</p>
-                    <p>U kunt vrijblijvend een offerte ontvangen door dit aanvraagformulier in te vullen en op te sturen. Uiteraard kunt u ons ook per e-mail of telefonisch bereiken.</p>
-                </div>
-            </div>
+            <MiddleContent
+                headline="Touringcar verhuur"
+                content={[
+                    "Stipt Vip Vervoer heeft meer dan 30 jaar ervaring in personenvervoer. Wij leveren maatwerk; naar uw wensen organiseren wij busreizen vanuit Amsterdam, Den Haag, Rotterdam en omgeving.",
+                    "U kunt vrijblijvend een offerte ontvangen door dit aanvraagformulier in te vullen en op te sturen. Uiteraard kunt u ons ook per e-mail of telefonisch bereiken."
+                ]}
+            />
             <div className="second-touring">
                 <div className="overlay">
                     <div className="secondary-content">
@@ -54,4 +52,4 @@ const Vip = () => {
     );
 }
 
-export default Vip;
+export default Touring;
