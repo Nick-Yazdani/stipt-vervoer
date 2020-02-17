@@ -19,7 +19,7 @@ class ContactForm extends Component {
         const email = this.state.email;
         const comments = this.state.comments;
         // Default options are marked with *
-        const response = await fetch('http://localhost:3001/feedback', {
+        const response = await fetch('https://stiptvervoer.com/feedback', {
             method: 'POST', // *GET, POST, PUT, DELETE, etc.
             mode: 'cors', // no-cors, *cors, same-origin
             cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
