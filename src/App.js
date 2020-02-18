@@ -7,13 +7,13 @@ import Footer from './components/footer-component/footer.component';
 import LoadingPage from './pages/LoadingPage';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-const Home = lazy(() => import('./pages/Home'))
-const Contact = lazy(() => import('./pages/Contact'))
-const Vip = lazy(() => import('./pages/Vip'))
-const Touring = lazy(() => import('./pages/Touring'))
-const Busreizen = lazy(() => import('./pages/Busreizen'))
-const Feedback = lazy(() => import('./pages/Feedback'))
-const NotFound = lazy(() => import('./pages/404'))
+const Home = lazy(() => import('./pages/Home'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Vip = lazy(() => import('./pages/Vip'));
+const Touring = lazy(() => import('./pages/Touring'));
+const Busreizen = lazy(() => import('./pages/Busreizen'));
+const Feedback = lazy(() => import('./pages/Feedback'));
+const NotFound = lazy(() => import('./pages/404'));
 
 const App = () => {
   return (
