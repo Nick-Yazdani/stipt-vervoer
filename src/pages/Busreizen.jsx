@@ -11,7 +11,7 @@ const Busreizen = ({ title }) => {
         <div>
             <div className="busreizen">
                 <Helmet><title>{title}</title></Helmet>
-                <Overlay title="Busreizein" caption="Sample text here" />
+                <Overlay title="Busreizein" caption="De beste busreizen in Nederland." />
             </div>
             <BusreizenComponent />
         </div>

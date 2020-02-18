@@ -8,7 +8,7 @@ const MiddleContent = ({ headline, content }) => {
             <h3>{headline}</h3>
             <div className="p-block">
                 {content.map(cont => {
-                    return <p key={cont.slice(0, 6)}>{cont}</p>
+                    return <p key={cont.slice(0, 20)}>{cont}</p>
                 })}
             </div>
         </div>
