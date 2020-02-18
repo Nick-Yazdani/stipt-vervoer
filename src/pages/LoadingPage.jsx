@@ -3,7 +3,7 @@ import Loader from 'react-loader-spinner';
 
 const LoadingPage = () => {
     return (
-        <div style={{height: "80vh", display: "flex", alignItems: "center", justifyContent: "center"}}>
+        <div style={{height: "80vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
             <Loader 
                 type="Puff"
                 color="#00BFFF"
