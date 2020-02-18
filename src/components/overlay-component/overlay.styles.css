@@ -18,3 +18,17 @@
 .smaller-text {
     font-size: 2rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .overlay {
+        text-align: center;
+    }
+    .big-text h1 {
+       font-size: 2rem;
+    }
+    .smaller-text {
+        font-size: 1rem;
+    }
+  }
+
+
