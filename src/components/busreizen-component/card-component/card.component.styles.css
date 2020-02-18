@@ -25,6 +25,8 @@
     color: white;
     border: 1px solid white;
     width: 90%;
+    background-color: black;
+    padding: 1rem;
 }
 
 .btn-2:hover {
