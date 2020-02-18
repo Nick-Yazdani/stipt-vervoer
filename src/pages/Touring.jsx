@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 import MiddleContent from '../components/middle-content/middle-content.component';
 import Overlay from '../components/overlay-component/overlay.component';
@@ -48,7 +49,7 @@ const Touring = ({ title }) => {
                         <div className="s-1-touring">
                             <h5>Aan het slag</h5>
                             <ul>
-                                <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier</li>
+                                <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl" style={{color: "white"}}>info@stiptvervoer.nl</a> of gebruik het aanvraagformulier <Link style={{color: "white"}} to="/contact">here</Link></li>
                             </ul>
                         </div>
                     </div>

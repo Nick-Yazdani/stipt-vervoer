@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import { Link } from 'react-router-dom';
 
 import './Vip.styles.css';
 
@@ -48,7 +49,7 @@ const Vip = ({ title }) => {
                         <div className="s-1">
                             <h5>Aan het slag</h5>
                             <ul>
-                                <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier</li>
+                                <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier <Link style={{color: "white"}} to="/contact">here</Link></li>
                             </ul>
                         </div>
                     </div>
