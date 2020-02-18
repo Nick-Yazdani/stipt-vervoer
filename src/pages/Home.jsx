@@ -8,8 +8,14 @@ import './Home.styles.css';
 const Home = ({ title }) => {
     return (
         <div className="home">
-            <Helmet><title>{title}</title></Helmet>
-            <Overlay title="Stipt Vervoer" caption="Beste Prijzen, Leukste Reizen"/>
+            <Helmet>
+                <title>{title}</title>
+                <meta
+                    name="description"
+                    content="De beste prijzen voor het huren van een touringcar en de leukste voordelige dagtochten en city tours naar London, Antwerpen, Parijs en Duitsland. Vertrek vanuit Amsterdam, Den Haag en Rotterdam."
+                />
+            </Helmet>
+            <Overlay title="Stipt Vervoer" caption="Beste Prijzen, Leukste Reizen" />
         </div>
     );
 }
