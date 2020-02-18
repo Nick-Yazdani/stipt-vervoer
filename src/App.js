@@ -12,6 +12,7 @@ import Vip from './pages/Vip';
 import Touring from './pages/Touring';
 import Busreizen from './pages/Busreizen';
 import Feedback from './pages/Feedback';
+import NotFound from './pages/404';
 
 import './styles.css';
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/touringcar-verhuur" render={(props) => <Touring {...props} title="Touringcar Verhuur" />} />
         <Route path="/busreizen" render={(props) => <Busreizen {...props} title="Busreizen" />} />
         <Route path="/feedback" render={(props) => <Feedback {...props} title="Feedback" />} />
+        <Route path="" render={(props) => <NotFound {...props} title="Pagina Niet Gevonden" />} />
         <Footer />
       </div>
     </React.Fragment>
