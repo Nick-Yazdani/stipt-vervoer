@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="fb-logo">
             <FacebookLogo className="fb" onClick={() => window.open("https://www.facebook.com/stiptvervoer", '_blank')}/>
             </div>
-            <div className="contact">
+            <div className="contact-details">
          
                 <div className="contact-container">
                     <div>

@@ -5,18 +5,19 @@
     color: white;
     text-transform: uppercase;
     background: url('../../images/Praag-1.jpg') no-repeat center center/cover;
-
+    height: 150vh;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 2rem;    
+    height: 100%;
+    width: 50%;
 }
 
 .button-control {
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .text-control {

@@ -85,9 +85,9 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="form-container">
-                <div className="overlay" style={{ height: "120vh" }}>
+                <div className="overlay" style={{ height: "150vh" }}>
                     <form onSubmit={this.handleSubmit}>
-                        <FormInput name="bedrijfsnaam" type="text" text="uw bedrijf (optioneel)" handleChange={this.handleChange} value={this.state.bedrijfsnaam} />
+                        <FormInput name="bedrijfsnaam" type="text" text="bedrijfsnaam" handleChange={this.handleChange} value={this.state.bedrijfsnaam} />
                         <FormInput name="naam" type="text" text="naam*" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />
                         <FormInput name="adres" type="text" text="adres" handleChange={this.handleChange} value={this.state.adres} />
                         <FormInput name="postcode" type="text" text="postcode" handleChange={this.handleChange} value={this.state.postcode} />
@@ -100,7 +100,7 @@ class ContactForm extends Component {
                             <textarea name="bericht" type="text" onChange={this.handleChange} value={this.state.bericht} style={this.state.berichtError ? this.state.textareaErrorStyle : null}></textarea>
                         </div>
                         <div className="button-control">
-                            <button>verzenden</button>
+                            <button style={{width: "100%"}}>verzenden</button>
                         </div>
                     </form>
                 </div>
