@@ -11,7 +11,7 @@ const Home = ({ title }) => {
             <Helmet>
                 <meta
                     name="description"
-                    content="Stipt vervoer bieden het beste in busverhuur, chauffeursdiensten, VIP-diensten en vervoer. Als u concurrerend geprijsde transportdiensten of bus- en touringcardiensten nodig hebt, heeft Stipt vervoer u gedekt."
+                    content="Stipt vervoer bieden het beste in busverhuur, dagtochten, chauffeursdiensten, VIP-diensten en vervoer. Als u concurrerend geprijsde transportdiensten of bus- en touringcardiensten nodig hebt, heeft Stipt vervoer u gedekt."
                 />
                 <title>{title}</title>
 
