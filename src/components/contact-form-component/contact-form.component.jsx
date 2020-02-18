@@ -74,7 +74,6 @@ class ContactForm extends Component {
                         <FormInput name="naam" type="text" text="uw naam (verplicht)" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />
                         <FormInput name="bedrijf" type="text" text="uw bedrijf (optioneel)" handleChange={this.handleChange} value={this.state.bedrijf} />
                         <FormInput name="email" type="email" text="uw email (verplicht)" handleChange={this.handleChange} value={this.state.email} style={this.state.emailError ? this.state.errorStyle : null} />
-                        <FormInput name="vervoer" type="text" text="welk vervoer wenst u?" handleChange={this.handleChange} value={this.state.vervoer} />
                         <div className="text-control">
                             <label htmlFor="wensen">OMSCHRIJF UW WENSEN EN IDEEËN (B.V. CATERING AAN BOORD)</label>
                             <textarea name="wensen" type="text" onChange={this.handleChange} value={this.state.wensen}></textarea>
