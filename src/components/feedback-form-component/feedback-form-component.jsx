@@ -65,7 +65,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="form-container">
-                <div className="overlay" style={{ height: "150vh" }}>
+                <div className="overlay" style={{ height: "200vh" }}>
                     <form onSubmit={this.handleSubmit} style={{ width: "50%" }}>
                         <FormInput name="name" type="text" text="naam*" handleChange={this.handleChange} value={this.state.name} style={this.state.nameError ? this.state.errorStyle : null} />
                         <FormInput name="email" type="email" text="email*" handleChange={this.handleChange} value={this.state.email} style={this.state.emailError ? this.state.errorStyle : null} />

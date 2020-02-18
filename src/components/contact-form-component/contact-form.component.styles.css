@@ -5,7 +5,9 @@
     color: white;
     text-transform: uppercase;
     background: url('../../images/Praag-1.jpg') no-repeat center center/cover;
-    height: 150vh;
+    height: 200vh;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
@@ -13,6 +15,7 @@ form {
     flex-direction: column;
     height: 100%;
     width: 50%;
+    justify-content: center;
 }
 
 .button-control {
