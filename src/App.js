@@ -1,20 +1,19 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import './styles.css';
 import Helmet from 'react-helmet';
-
-
 import Navbar from './components/navbar-component/navbar.component';
 import Footer from './components/footer-component/footer.component';
+import LoadingPage from './pages/LoadingPage';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
-import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Vip from './pages/Vip';
-import Touring from './pages/Touring';
-import Busreizen from './pages/Busreizen';
-import Feedback from './pages/Feedback';
-import NotFound from './pages/404';
-
-import './styles.css';
+const Home = lazy(() => import('./pages/Home'))
+const Contact = lazy(() => import('./pages/Contact'))
+const Vip = lazy(() => import('./pages/Vip'))
+const Touring = lazy(() => import('./pages/Touring'))
+const Busreizen = lazy(() => import('./pages/Busreizen'))
+const Feedback = lazy(() => import('./pages/Feedback'))
+const NotFound = lazy(() => import('./pages/404'))
 
 const App = () => {
   return (
@@ -25,6 +24,7 @@ const App = () => {
       </Helmet>
       <div>
         <Navbar />
+        <Suspense fallback={<LoadingPage />}>
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} title="Stipt Vervoer - beste prijzen, leukste reizen" />} />
           <Route path="/contact" render={(props) => <Contact {...props} title="Contact" />} />
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="/feedback" render={(props) => <Feedback {...props} title="Feedback" />} />
           <Route path="" render={(props) => <NotFound {...props} title="Pagina Niet Gevonden" />} />
         </Switch>
+        </Suspense>
         <Footer />
       </div>
     </React.Fragment>

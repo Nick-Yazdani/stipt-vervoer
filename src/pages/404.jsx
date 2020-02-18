@@ -5,7 +5,7 @@ import Overlay from '../components/overlay-component/overlay.component';
 
 import './Home.styles.css';
 
-const Home = ({ title }) => {
+const FourOhFour = ({ title }) => {
     return (
         <div className="home">
             <Helmet><title>{title}</title></Helmet>
@@ -14,4 +14,4 @@ const Home = ({ title }) => {
     );
 }
 
-export default Home;
+export default FourOhFour;

@@ -47,11 +47,24 @@
 
 
 @media only screen and (max-width: 600px) {
-    h3 {
+    .secondary-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .s-1-touring h5 {
+        font-size: 1.5rem;
+    }
+    .s-1-touring ul li {
         font-size: 1rem;
     }
 
-    .s-1 ul {
-        font-size: 1rem;
+    .s-1-touring ul li a {
+        text-decoration: none;
+        color: white;
+    }
+    .s-1-touring ul li a:hover {
+        text-decoration: underline;
     }
 }
+
