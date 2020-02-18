@@ -16,7 +16,7 @@ class Card extends React.Component {
                 <img className="img" src={this.props.image} alt={this.props.alt} />
                 <div className="span-div"><span className="span-caption">{this.props.caption}</span></div>
                 
-                <Popup trigger={<button className="btn-2">click me</button>} modal closeOnDocumentClick 
+                <Popup trigger={<button className="btn-2">MEER INFORMATIE</button>} modal closeOnDocumentClick 
                 contentStyle={{width: "80%", padding: "0"}}>
                     <div className="modal-content"><h3>{this.props.caption}</h3></div>
                     <ul className="modal-list">
