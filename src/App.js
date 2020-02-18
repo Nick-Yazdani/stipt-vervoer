@@ -26,7 +26,7 @@ const App = () => {
         <Navbar />
         <Suspense fallback={<LoadingPage />}>
         <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} title="Stipt Vervoer - beste prijzen, leukste reizen" />} />
+          <Route exact path="/" render={(props) => <Home {...props} title="Stipt Vervoer - Beste prijzen, leukste reizen" />} />
           <Route path="/contact" render={(props) => <Contact {...props} title="Contact" />} />
           <Route path="/vip-diensten" render={(props) => <Vip {...props} title="VIP Diensten" />} />
           <Route path="/touringcar-verhuur" render={(props) => <Touring {...props} title="Touringcar Verhuur" />} />
