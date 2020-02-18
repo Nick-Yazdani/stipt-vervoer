@@ -28,7 +28,7 @@ const Touring = ({ title }) => {
                 ]}
             />
             <div className="second-touring">
-                <div className="overlay">
+                <div className="overlay" style={{height: "70vh"}}>
                     <div className="secondary-content">
                         <div className="s-1-touring">
                             <h5>Voor Wie?</h5>
