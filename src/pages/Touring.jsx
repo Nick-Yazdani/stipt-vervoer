@@ -10,7 +10,13 @@ const Touring = ({ title }) => {
     return (
         <div>
             <div className="touring">
-                <Helmet><title>{title}</title></Helmet>
+                <Helmet>
+                    <meta
+                        name="description"
+                        content="Stipt vervoer biedt Nederland het beste in touringcarverhuur tegen een redelijke en concurrerende prijs."
+                    />
+                    <title>{title}</title>
+                </Helmet>
                 <Overlay title={"Touringcar verhuur"} caption={"Vertrouwd en comfortabel"} />
             </div>
             <MiddleContent

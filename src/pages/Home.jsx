@@ -9,11 +9,12 @@ const Home = ({ title }) => {
     return (
         <div className="home">
             <Helmet>
-                <title>{title}</title>
                 <meta
                     name="description"
-                    content="De beste prijzen voor het huren van een touringcar en de leukste voordelige dagtochten en city tours naar London, Antwerpen, Parijs en Duitsland. Vertrek vanuit Amsterdam, Den Haag en Rotterdam."
+                    content="Stipt vervoer bieden het beste in busverhuur, chauffeursdiensten, VIP-diensten en vervoer. Als u concurrerend geprijsde transportdiensten of bus- en touringcardiensten nodig hebt, heeft Stipt vervoer u gedekt."
                 />
+                <title>{title}</title>
+
             </Helmet>
             <Overlay title="Stipt Vervoer" caption="Beste Prijzen, Leukste Reizen" />
         </div>
