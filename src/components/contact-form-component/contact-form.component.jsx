@@ -85,7 +85,7 @@ class ContactForm extends Component {
     render() {
         return (
             <div className="form-container">
-                <div className="contact-overlay" style={{ height: "200vh" }}>
+                <div className="contact-overlay">
                     <form onSubmit={this.handleSubmit}>
                         <FormInput name="bedrijfsnaam" type="text" text="bedrijfsnaam" handleChange={this.handleChange} value={this.state.bedrijfsnaam} />
                         <FormInput name="naam" type="text" text="naam*" handleChange={this.handleChange} value={this.state.naam} style={this.state.nameError ? this.state.errorStyle : null} />

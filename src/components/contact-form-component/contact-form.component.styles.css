@@ -104,3 +104,12 @@ button:hover {
         font-size: 0.8rem;
     }
 }
+
+@media only screen and (max-height: 350px) {
+    .form-container {
+        height: 400vh;
+    }
+    .contact-overlay {
+        height: 400vh;
+    }
+}
