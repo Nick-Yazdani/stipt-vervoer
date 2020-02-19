@@ -10,11 +10,25 @@
 
 }
 
-form {
+.fb-overlay {
+    z-index: 1;
+    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.form-container form {
     display: flex;
     flex-direction: column;
     padding: 2rem;  
-    justify-content: center;  
+    justify-content: center; 
+    width: 50%; 
 }
 
 .button-control {
@@ -72,7 +86,7 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
     textarea {
-        width: 90%;
+        width: 80%;
         font-size: 0.8rem;
     }
 
@@ -86,7 +100,35 @@ button:hover {
         font-size: 0.8rem;
     }
 
-    input {
+    .form-container input{
         font-size: 0.8rem;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    .form-control {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .text-control {
+        width: 80%;
+    }
+
+    .form-container form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form-container button {
+        width: 100%;
+    }
+
+    .fb-overlay {
+        height: 200vh;
     }
 }
