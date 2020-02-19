@@ -8,6 +8,20 @@
     background: url('../images/Kroatie_Opatija.jpg') no-repeat center center/cover;
 }
 
+.overlay-vip {
+    z-index: 1;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 .secondary-content {
     display: flex;
     justify-content: space-between;
@@ -59,12 +73,20 @@
         font-size: 1rem;
     }
 
+    .s-1 ul li {
+        padding: 0;
+        font-size: 1rem;
+    }
+
     .s-1-touring ul li a {
         text-decoration: none;
         color: white;
     }
     .s-1-touring ul li a:hover {
         text-decoration: underline;
+    }
+    .overlay-vip {
+        height: 100vh;
     }
 }
 

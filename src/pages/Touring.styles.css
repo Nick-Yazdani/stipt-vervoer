@@ -13,6 +13,19 @@
     background: url('../images/Italie_Venetie.jpg') no-repeat center center/cover;
 }
 
+.overlay-touring {
+    z-index: 1;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .secondary-content {
     display: flex;
     justify-content: space-between;
@@ -48,6 +61,7 @@
     }
     .s-1-touring ul li {
         font-size: 1rem;
+        padding: 0;
     }
 
     .big-text {
@@ -60,6 +74,9 @@
     }
     .s-1-touring ul li a:hover {
         text-decoration: underline;
+    }
+    .overlay-touring {
+        height: 120vh;
     }
 }
 
