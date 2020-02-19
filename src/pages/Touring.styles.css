@@ -64,6 +64,10 @@
         padding: 0;
     }
 
+    .s-1-touring {
+        padding: 1rem;
+    }
+
     .big-text {
         text-align: center;
     }
@@ -76,7 +80,11 @@
         text-decoration: underline;
     }
     .overlay-touring {
-        height: 120vh;
+        height: 90vh;
+    }
+
+    .touring {
+        height: 70vh;
     }
 
     .second-touring {

@@ -66,11 +66,18 @@
         flex-direction: column;
         text-align: center;
     }
+    .vip {
+        height: 70vh;
+    }
     .s-1-touring h5 {
         font-size: 1.5rem;
     }
     .s-1-touring ul li {
         font-size: 1rem;
+    }
+
+    .s-1 {
+        width: 80%;
     }
 
     .s-1 ul li {
@@ -86,7 +93,12 @@
         text-decoration: underline;
     }
     .overlay-vip {
-        height: 100vh;
+        height: 60vh;
+    }
+    .secondary-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 

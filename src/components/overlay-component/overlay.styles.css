@@ -22,6 +22,7 @@
 @media only screen and (max-width: 600px) {
     .overlay {
         text-align: center;
+        height: 70vh;
     }
     .big-text h1 {
        font-size: 2rem;

@@ -2,3 +2,9 @@
     background: url('../images/stipt-comfort-2b.jpg') no-repeat center center/cover;
     height: 100vh;
 }
+
+@media only screen and (max-width: 600px) {
+    .busreizen {
+        height: 70vh;
+    }
+}

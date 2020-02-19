@@ -8,6 +8,9 @@
     .contact form {
         width: 90%;
     }
+    .contact {
+        height: 150vh;
+    }
   }
 
 @media only screen and (max-height: 350px) {
@@ -15,3 +18,12 @@
         height: 400vh;
     }
 }
+
+@media only screen and (min-width: 601px)  and (max-width: 840px) {
+    .contact form {
+        width: 80%;
+    }
+    .contact {
+        height: 260vh;
+    }
+  }
