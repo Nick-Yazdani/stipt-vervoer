@@ -10,7 +10,7 @@
     }
   }
 
-  @media only screen and (max-height: 350px) {
+@media only screen and (max-height: 350px) {
     .contact {
         height: 400vh;
     }
