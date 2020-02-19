@@ -78,5 +78,22 @@
     .overlay-touring {
         height: 120vh;
     }
+
+    .second-touring {
+        width: 100vw;
+    }
+
+    .secondary-content {
+        width: 100vw;
+        padding: 0;
+    }
 }
 
+@media only screen and (max-width: 340px) {
+    .s-1-touring ul li {
+        font-size: 1rem;
+    }
+    .s-1-touring {
+        padding: 0 1rem;
+    }
+}
