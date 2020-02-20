@@ -11,8 +11,8 @@ const Navbar = () => {
                 <NavbarItem text="busreizen" path="/busreizen" />
                 <NavbarItem text="touringcar verhuur" path="/touringcar-verhuur" />
                 <NavbarItem text="vip diensten" path="/vip-diensten" />
-                <NavbarItem text="contact" path="/contact" />
-                <NavbarItem text="feedback" path="/feedback" />
+                <NavbarItem text="contact stiptvervoer" path="/contact" />
+                <NavbarItem text="klanten feedback" path="/feedback" />
             </ul>
         </nav>
     );

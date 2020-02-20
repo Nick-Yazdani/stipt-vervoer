@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { Link } from 'react-router-dom';
-
-import './Vip.styles.css';
-
+import EndContent from '../components/end-content-component/end-content.component'
 import MiddleContent from '../components/middle-content/middle-content.component';
 import Overlay from '../components/overlay-component/overlay.component';
+import Background from '../images/Lloret-de-Mar-2.jpg'
+
+import './Vip.styles.css';
 
 const Vip = ({ title }) => {
     return (
@@ -29,33 +29,20 @@ const Vip = ({ title }) => {
                     "U kunt vrijblijvend een offerte ontvangen door dit aanvraagformulier in te vullen en op te sturen. Uiteraard kunt u ons ook per e-mail of telefonisch bereiken."
                 ]}
             />
-            <div className="second">
-                <div className="overlay-vip">
-                    <div className="secondary-content">
-                        <div className="s-1">
-                            <h5>Voor Wie?</h5>
-                            <ul>
-                                <li>Professioneel vervoer t.b.v delegaties, congresvervoer en event vervoer</li>
-                                <li>Representatieve en Persoonlijke Directievervoer</li>
-                                <li>Chauffeur diensten voor bedrijven, organisaties en instanties</li>
-                            </ul>
-                        </div>
-                        <div className="s-1">
-                            <h5>Waarom?</h5>
-                            <ul>
-                                <li>Stipt VIP vervoer staat voor professioneel, persoonlijk, discreet en betrouwbaar vervoer.</li>
-                            </ul>
-                        </div>
-                        <div className="s-1">
-                            <h5>Aan het slag</h5>
-                            <ul>
-                                <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier <Link style={{color: "white"}} to="/contact">here</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <EndContent backgroundImage={Background}
+                        voor={
+                            [
+                                "Professioneel vervoer t.b.v delegaties, congresvervoer en event vervoer", 
+                                "Representatieve en Persoonlijke Directievervoer",
+                                "Chauffeur diensten voor bedrijven, organisaties en instanties"
+                            ]}
+                        waarom={
+                            [
+                                "Stipt VIP vervoer staat voor professioneel, persoonlijk, discreet en betrouwbaar vervoer."
+                            ]
+                        }
+            />
             </div>
-        </div>
     );
 }
 
