@@ -27,11 +27,11 @@ const App = () => {
         <Suspense fallback={<LoadingPage />}>
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} title="Stipt Vervoer - Beste prijzen, leukste reizen" />} />
-          <Route path="/contact" render={(props) => <Contact {...props} title="Contact" />} />
-          <Route path="/vip-diensten" render={(props) => <Vip {...props} title="VIP Diensten" />} />
-          <Route path="/touringcar-verhuur" render={(props) => <Touring {...props} title="Touringcar Verhuur" />} />
-          <Route path="/busreizen" render={(props) => <Busreizen {...props} title="Busreizen" />} />
-          <Route path="/feedback" render={(props) => <Feedback {...props} title="Feedback" />} />
+          <Route path="/contact" render={(props) => <Contact {...props} title="Stipt Vervoer - Contact" />} />
+          <Route path="/vip-diensten" render={(props) => <Vip {...props} title="Stipt Vervoer - VIP Diensten" />} />
+          <Route path="/touringcar-verhuur" render={(props) => <Touring {...props} title="Stipt Vervoer - Touringcar Verhuur" />} />
+          <Route path="/busreizen" render={(props) => <Busreizen {...props} title="Stipt Vervoer - Busreizen" />} />
+          <Route path="/feedback" render={(props) => <Feedback {...props} title="Stipt Verover - Feedback" />} />
           <Route path="" render={(props) => <NotFound {...props} title="Pagina Niet Gevonden" />} />
         </Switch>
         </Suspense>
