@@ -26,7 +26,7 @@ const EndContent = ({ backgroundImage, voor, waarom }) => {
                 <div className="end-s1">
                     <h5>Aan het slag</h5>
                     <ul>
-                        <li>Stuur uw wensen via email naar <a href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier <Link style={{ color: "white" }} to="/contact">here</Link></li>
+                        <li>Stuur uw wensen via email naar <a id="email" href="mailto:info@stiptvervoer.nl">info@stiptvervoer.nl</a> of gebruik het aanvraagformulier <Link style={{ color: "white" }} to="/contact">here</Link></li>
                     </ul>
                 </div>
             </div>
