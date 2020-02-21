@@ -110,7 +110,15 @@ class Details extends React.Component {
                 <p>{this.state.TripData[0].tijdsverschil}</p>
                 </div>
             </div>
-        ) : null;
+        ) :  <div style={{height: "80vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+        <Loader 
+            type="Puff"
+            color="#00BFFF"
+            height={100}
+            width={100}
+            timeout={3000}
+        />
+    </div>;
     }
 }
 
