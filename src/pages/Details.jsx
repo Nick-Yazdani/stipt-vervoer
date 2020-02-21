@@ -9,21 +9,17 @@ class Details extends React.Component {
         VertrekData: []
     }
     componentDidMount = async () => {
-        const response1 = await fetch('https://www.stiptvervoer.com/trips/4');
+        const response1 = await fetch(`https://www.stiptvervoer.com/trips/${this.props.match.params.id}`);
         const parsedResponse1 = await response1.json();
-        this.setState({ TripData: parsedResponse1 }, () => {
-            console.log(this.state.TripData)
-        });
-        const response2 = await fetch('https://www.stiptvervoer.com/opstapplaatsen/4');
+        this.setState({ TripData: parsedResponse1 })
+
+        const response2 = await fetch(`https://www.stiptvervoer.com/opstapplaatsen/${this.props.match.params.id}`);
         const parsedResponse2 = await response2.json();
-        this.setState({ OpstData: parsedResponse2 }, () => {
-            console.log(this.state.OpstData)
-        });
-        const response3 = await fetch('https://www.stiptvervoer.com/vertrekdata/4');
+        this.setState({ OpstData: parsedResponse2 });
+        
+        const response3 = await fetch(`https://www.stiptvervoer.com/vertrekdata/${this.props.match.params.id}`);
         const parsedResponse3 = await response3.json();
-        this.setState({ VertrekData: parsedResponse3 }, () => {
-            console.log(this.state.VertrekData)
-        });
+        this.setState({ VertrekData: parsedResponse3 });
     }
     render() {
         return this.state.TripData.length > 0 ? (
