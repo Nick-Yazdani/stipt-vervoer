@@ -1,5 +1,6 @@
-import React from 'react'
-import './Details.css'
+import React from 'react';
+import Loader from 'react-loader-spinner';
+import './Details.css';
 
 class Details extends React.Component {
     state = {
