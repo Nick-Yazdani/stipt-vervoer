@@ -1,0 +1,14 @@
+.details {
+    font-family: "Quicksand", sans-serif;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.details ul {
+    list-style: none;
+}
+
+.padme {
+    padding: 1rem;
+}

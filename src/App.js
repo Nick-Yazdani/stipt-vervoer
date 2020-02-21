@@ -14,6 +14,7 @@ const Touring = lazy(() => import('./pages/Touring'));
 const Busreizen = lazy(() => import('./pages/Busreizen'));
 const Feedback = lazy(() => import('./pages/Feedback'));
 const NotFound = lazy(() => import('./pages/404'));
+const Details = lazy(() => import('./pages/Details'));
 
 const App = () => {
   return (
@@ -30,7 +31,8 @@ const App = () => {
           <Route path="/contact" render={(props) => <Contact {...props} title="Stipt Vervoer - Contact" />} />
           <Route path="/vip-diensten" render={(props) => <Vip {...props} title="Stipt Vervoer - VIP Diensten" />} />
           <Route path="/touringcar-verhuur" render={(props) => <Touring {...props} title="Stipt Vervoer - Touringcar Verhuur" />} />
-          <Route path="/busreizen" render={(props) => <Busreizen {...props} title="Stipt Vervoer - Busreizen" />} />
+          <Route exact path="/busreizen" render={(props) => <Busreizen {...props} title="Stipt Vervoer - Busreizen" />} />
+          <Route path="/busreizen/:id" render={(props) => <Details {...props} title="Stipt Vervoer - Busreizen" />} />
           <Route path="/feedback" render={(props) => <Feedback {...props} title="Stipt Verover - Feedback" />} />
           <Route path="" render={(props) => <NotFound {...props} title="Pagina Niet Gevonden" />} />
         </Switch>

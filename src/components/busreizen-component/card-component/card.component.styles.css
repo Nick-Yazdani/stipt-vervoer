@@ -35,31 +35,6 @@
     background-color: white;
 }
 
-.modal-content {
-    font-family: "Quicksand", sans-serif;
-    width: 100%;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-}
-
-.modal-content h3 {
-    font-size: 3rem;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-}
-
-.modal-list li {
-    font-family: "Quicksand", sans-serif;
-    font-size: 2rem;
-    padding: 1rem;
-}
-
-.modal-list {
-    list-style-type: none;
-}
-
 .inline {
     display: inline-block;
     text-align: right;
@@ -75,4 +50,18 @@
 
 .inner {
     font-size: 1.4rem;
+}
+
+.card-parent a {
+    text-decoration: none;
+    color: white;
+    background: black;
+    font-family: "Quicksand", sans-serif;
+    padding: 1rem;
+    transition: 0.3s;
+}
+
+.card-parent a:hover {
+   color: black;
+   background-color: white;
 }
