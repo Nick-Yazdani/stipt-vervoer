@@ -20,7 +20,8 @@ class BusreizenContainer extends React.Component {
                                                                             key={post.id}
                                                                             param={post.id}
                                                                             caption={post.title} 
-                                                                            image={post.imageurl} 
+                                                                            image={post.imageurl}
+                                                                            alt={post.imagename} 
                                                                             />
                                                                             }) : null}
             </div>
