@@ -11,7 +11,9 @@ class Details extends React.Component {
     componentDidMount = async () => {
         const response1 = await fetch(`https://www.stiptvervoer.com/trips/${this.props.match.params.id}`);
         const parsedResponse1 = await response1.json();
-        this.setState({ TripData: parsedResponse1 })
+        this.setState({ TripData: parsedResponse1 }, () => {
+            window.scrollTo(0, 0);
+        })
 
         const response2 = await fetch(`https://www.stiptvervoer.com/opstapplaatsen/${this.props.match.params.id}`);
         const parsedResponse2 = await response2.json();
