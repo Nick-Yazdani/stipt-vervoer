@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from 'react-loader-spinner';
+import Helmet from 'react-helmet';
 import './Details.css';
 
 class Details extends React.Component {
@@ -25,6 +26,14 @@ class Details extends React.Component {
     }
     render() {
         return this.state.TripData.length > 0 ? (
+            <React.Fragment>
+                <Helmet>
+                    <title>Stipt Vervoer - {this.state.TripData[0].title}</title>
+                    <meta
+                    name="description"
+                    content={this.state.TripData[0].highlights}
+                />
+                </Helmet>
             <div className="details">
                 <h1 style={{textAlign: "center", padding: "1rem"}}>{this.state.TripData[0].title} - {this.state.TripData[0].price}</h1>
 
@@ -109,6 +118,7 @@ class Details extends React.Component {
                 <p>{this.state.TripData[0].tijdsverschil}</p>
                 </div>
             </div>
+            </React.Fragment>
         ) :  <div style={{height: "80vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
         <Loader 
             type="Puff"
