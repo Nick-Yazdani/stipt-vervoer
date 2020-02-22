@@ -9,7 +9,11 @@ class Feedback extends React.Component {
     render() {
         return (
         <React.Fragment>
-            <Helmet><title>{this.props.title}</title></Helmet>
+            <Helmet>
+                <title>{this.props.title}</title>
+                <meta name="description"
+                      content="Geef feedback over uw ervaringen en die van anderen met Stipt Vervoer"></meta>
+            </Helmet>
             <FeedbackForm className="fb-form" />
             <FeedbackContainer />
         </React.Fragment>
