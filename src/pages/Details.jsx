@@ -77,7 +77,7 @@ class Details extends React.Component {
                 <h3 style={{marginTop: "1rem"}}>Inclusief</h3>
                 {this.state.VertrekData.map(item => {
                     return (
-                    <ul>
+                    <ul key={item.inclusief}>
                         <li style={{padding: "0.5rem 0"}}>{item.inclusief}</li>
                     </ul>
                     )
@@ -87,7 +87,7 @@ class Details extends React.Component {
                 <h3>Exclusief</h3>
                 {this.state.VertrekData.map(item => {
                     return (
-                    <ul>
+                    <ul key={item.exclusief}>
                         <li style={{padding: "0.5rem 0"}}>{item.exclusief}</li>
                     </ul>
                     )

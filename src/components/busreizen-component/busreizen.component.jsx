@@ -9,9 +9,7 @@ class BusreizenContainer extends React.Component {
     componentDidMount = async () => {
         const response = await fetch('https://stiptvervoer.com/trips');
         const parsedResponse = await response.json();
-        this.setState({trips: parsedResponse}, () => {
-            console.log(this.state.trips)
-        });
+        this.setState({trips: parsedResponse});
     }
     render() { 
         return (
