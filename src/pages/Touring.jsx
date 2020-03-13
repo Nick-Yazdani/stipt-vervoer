@@ -20,7 +20,7 @@ const Touring = ({ title }) => {
                     />
                     <title>{title}</title>
                 </Helmet>
-                <Overlay title={"Touringcar verhuur"} caption={"Vertrouwd en comfortabel"} />
+                <Overlay title={"Touringcar verhuur"} caption={"Vertrouwd, flexibel, voordelig"} />
             </div>
             <MiddleContent
                 headline="Touringcar verhuur"

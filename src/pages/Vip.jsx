@@ -18,7 +18,7 @@ const Vip = ({ title }) => {
                 <title>{title}</title>
             </Helmet>
             <div className="vip">
-                <Overlay title={"VIP vervoer"} caption={"Professioneel en betrouwbaar"} />
+                <Overlay title={"VIP Diensten"} caption={"Professioneel en betrouwbaar"} />
             </div>
             <MiddleContent
                 headline="VIP diensten in Den Haag"
